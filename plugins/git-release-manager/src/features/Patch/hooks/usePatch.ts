@@ -352,7 +352,7 @@ ${selectedPatchCommit.commit.message}`,
         updatedReleaseUrl: updatedReleaseRes.value.htmlUrl,
       });
     } catch (error) {
-      asyncCatcher(error);
+      asyncCatcher(error as Error);
     }
 
     addStepToResponseSteps({
